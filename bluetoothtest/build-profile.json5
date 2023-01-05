@@ -1,0 +1,55 @@
+/*
+ * Copyright (C) 2022 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/apple/.ohos/config/auto_debug_bluetoothtest_ohos.samples.bttest_70086000227096415.cer",
+          "storePassword": "0000001BBA9893732228DBCCE23F6801C0416DA7C38CC1F80B4835BC54618A7CD274D144FE74E9131F1964",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B8FE310CDBE2FD5B6F50DBAECC7B7C9BE8315FDE31DF660C9C0543D58AD96D061556C79D29E9C04",
+          "profile": "/Users/apple/.ohos/config/auto_debug_bluetoothtest_ohos.samples.bttest_70086000227096415.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/apple/.ohos/config/auto_debug_bluetoothtest_ohos.samples.bttest_70086000227096415.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 8,
+    "compatibleSdkVersion": 8,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

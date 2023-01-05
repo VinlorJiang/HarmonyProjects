@@ -166,9 +166,9 @@ struct Index {
   initBluetooth() {
     console.log(this.logTag + 'initBluetooth')
     Logger.info(TAG, `enter on initBluetooth`)
-//    bluetooth.on('stateChange', (data) => {
-//      Logger.info(TAG, `enter on stateChange`)
-//      Logger.info(TAG, `data:`,JSON.stringify(data))
+    bluetooth.on('stateChange', (data: bluetooth.BluetoothState) => {
+      Logger.info(TAG, `enter on stateChange`)
+      Logger.info(TAG, `BluetoothState = ${JSON.stringify(data)}`)
 //      if (data === bluetooth.BluetoothState.STATE_ON) {
 //        Logger.info(TAG, `enter BluetoothState.STATE_ON`)
 //        this.foundDevices()
@@ -181,15 +181,31 @@ struct Index {
 //        bluetooth.stopBluetoothDiscovery()
 //        this.discoveryList = []
 //      }
-//      Logger.info(TAG, `BluetoothState = ${JSON.stringify(data)}`)
-//    })
-    bluetooth.on('stateChange', (data) =>{
-      Logger.info(TAG+ JSON.stringify(data));
-    });
+
+      switch (data) {
+        case 2:
+          Logger.info(TAG, `enter BluetoothState.STATE_ON`)
+          this.foundDevices()
+          break;
+        case 0:
+          bluetooth.off('bluetoothDeviceFind', (data) => {
+            Logger.info(TAG, `offBluetoothDeviceFindData = ${JSON.stringify(data)}`)
+          })
+          bluetooth.stopBluetoothDiscovery()
+          this.discoveryList = []
+          break;
+        default:
+          break;
+      }
+    })
+//    bluetooth.on('stateChange', (data: bluetooth.BluetoothState) =>{
+//      Logger.info(TAG+ JSON.stringify(data));
+//    });
     bluetooth.enableBluetooth()
   }
 
   foundDevices() {
+    Logger.info(TAG, `foundDevices`)
     bluetooth.on('bluetoothDeviceFind', (data) => {
       Logger.info(TAG, `enter on bluetoothDeviceFind`)
       if (data !== null && data.length > 0) {
@@ -208,8 +224,9 @@ struct Index {
     bluetooth.setBluetoothScanMode(bluetooth.ScanMode.SCAN_MODE_CONNECTABLE_GENERAL_DISCOVERABLE, TIME)
   }
 
-  async aboutToAppear() {
-    await globalThis.abilityContext.requestPermissionsFromUser(['ohos.permission.USE_BLUETOOTH', 'ohos.permission.DISCOVER_BLUETOOTH', 'ohos.permission.LOCATION', 'ohos.permission.MANAGE_BLUETOOTH'])
+  aboutToAppear() {
+    Logger.info(TAG, `aboutToAppear`)
+//    globalThis.abilityContext.requestPermissionsFromUser(['ohos.permission.USE_BLUETOOTH', 'ohos.permission.DISCOVER_BLUETOOTH', 'ohos.permission.LOCATION', 'ohos.permission.MANAGE_BLUETOOTH'])
     Logger.info(TAG, `grantPermission,requestPermissionsFromUser,PermissionRequestResult`)
 
     let state = bluetooth.getState()

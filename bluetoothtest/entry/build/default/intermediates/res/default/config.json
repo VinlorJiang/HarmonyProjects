@@ -1,0 +1,186 @@
+{
+    "app" : 
+    {
+        "apiVersion" : 
+        {
+            "compatible" : 8,
+            "releaseType" : "Release",
+            "target" : 8
+        },
+        "bundleName" : "ohos.samples.bttest",
+        "vendor" : "samples",
+        "version" : 
+        {
+            "code" : 1000000,
+            "name" : "1.0.0"
+        }
+    },
+    "deviceConfig" : 
+    {
+        "default" : 
+        {
+            "debug" : true
+        }
+    },
+    "module" : 
+    {
+        "abilities" : 
+        [
+            {
+                "description" : "$string:MainAbility_desc",
+                "descriptionId" : 16777221,
+                "formsEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777563,
+                "label" : "$string:MainAbility_label",
+                "labelId" : 16777222,
+                "launchType" : "singleton",
+                "name" : ".MainAbility",
+                "orientation" : "unspecified",
+                "skills" : 
+                [
+                    {
+                        "actions" : 
+                        [
+                            "action.system.home"
+                        ],
+                        "entities" : 
+                        [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "srcLanguage" : "ets",
+                "srcPath" : "MainAbility",
+                "type" : "page",
+                "visible" : true
+            },
+            {
+                "description" : "$string:MainAbility2_desc",
+                "descriptionId" : 16777217,
+                "formsEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777563,
+                "label" : "$string:MainAbility2_label",
+                "labelId" : 16777218,
+                "launchType" : "singleton",
+                "name" : ".MainAbility2",
+                "orientation" : "unspecified",
+                "srcLanguage" : "ets",
+                "srcPath" : "MainAbility2",
+                "type" : "page",
+                "visible" : true
+            }
+        ],
+        "deviceType" : 
+        [
+            "default",
+            "tablet"
+        ],
+        "distro" : 
+        {
+            "deliveryWithInstall" : true,
+            "installationFree" : false,
+            "moduleName" : "entry",
+            "moduleType" : "entry",
+            "virtualMachine" : "ark0.0.0.2"
+        },
+        "js" : 
+        [
+            {
+                "mode" : 
+                {
+                    "syntax" : "ets",
+                    "type" : "pageAbility"
+                },
+                "name" : ".MainAbility",
+                "pages" : 
+                [
+                    "pages/homePage",
+                    "pages/manualApiTestPage",
+                    "pages/manualSceneTest",
+                    "pages/autoTest",
+                    "pages/profile",
+                    "pages/subManualApiTest/BrInterfaceTest",
+                    "pages/subManualApiTest/bleTest",
+                    "pages/subManualApiTest/gattTest",
+                    "pages/subManualApiTest/sppTest",
+                    "pages/subManualApiTest/profileTest",
+                    "pages/subManualApiTest/subBrTest/deviceName",
+                    "pages/subManualApiTest/subBrTest/setScanMode",
+                    "pages/subManualApiTest/subBrTest/deviceFound",
+                    "pages/subManualApiTest/subBrTest/profileConnState",
+                    "pages/subManualApiTest/subBrTest/searchProfileConnStateById",
+                    "pages/subManualApiTest/subBrTest/pairedDevices",
+                    "pages/subManualApiTest/subGattTest/gattClient",
+                    "pages/subManualApiTest/subGattTest/gattServer",
+                    "pages/subManualApiTest/subSppTest/sppClientTest",
+                    "pages/subManualApiTest/subSppTest/sppServerTest",
+                    "pages/subAutoTest/brAutoTest",
+                    "pages/subAutoTest/bleAutoTest",
+                    "pages/subAutoTest/gattAutoTest",
+                    "pages/subAutoTest/sppAutoTest",
+                    "pages/subAutoTest/profileAutoTest",
+                    "pages/subAutoTest/subGattAutoTest/gattClientAutoTest",
+                    "pages/subAutoTest/subGattAutoTest/gattServerAutoTest",
+                    "pages/subAutoTest/subSppAutoTest/sppClientAutoTest",
+                    "pages/subAutoTest/subSppAutoTest/sppServerAutoTest",
+                    "pages/subAutoTest/subProfileAutoTest/a2dpSourceAutoTest",
+                    "pages/subAutoTest/subProfileAutoTest/handsFreeAudioGatewayAutoTest",
+                    "pages/subAutoTest/subProfileAutoTest/hitHostAutoTest",
+                    "pages/subAutoTest/subProfileAutoTest/panNetworkAutoTest",
+                    "pages/subScenarioTest/brFoundScenarioTest",
+                    "pages/subScenarioTest/bleFoundScenarioTest",
+                    "pages/subScenarioTest/gattClientScenarioTest",
+                    "pages/subScenarioTest/gattServerScenarioTest",
+                    "pages/subScenarioTest/sppClientScenarioTest",
+                    "pages/subScenarioTest/sppServerScenarioTest",
+                    "pages/subProfileTest/a2dpSourceProfileTest",
+                    "pages/subProfileTest/handsFreeAudioGatewayProfileTest",
+                    "pages/subProfileTest/hidHostProfileTest",
+                    "pages/subProfileTest/panNetworkProfileTest"
+                ],
+                "window" : 
+                {
+                    "autoDesignWidth" : false,
+                    "designWidth" : 720
+                }
+            },
+            {
+                "mode" : 
+                {
+                    "syntax" : "ets",
+                    "type" : "pageAbility"
+                },
+                "name" : ".MainAbility2",
+                "pages" : 
+                [
+                    "pages/index"
+                ],
+                "window" : 
+                {
+                    "autoDesignWidth" : false,
+                    "designWidth" : 720
+                }
+            }
+        ],
+        "mainAbility" : ".MainAbility",
+        "name" : ".entry",
+        "package" : "ohos.samples.bttest",
+        "reqPermissions" : 
+        [
+            {
+                "name" : "ohos.permission.DISCOVER_BLUETOOTH",
+                "reason" : ""
+            },
+            {
+                "name" : "ohos.permission.USE_BLUETOOTH",
+                "reason" : ""
+            },
+            {
+                "name" : "ohos.permission.LOCATION"
+            }
+        ],
+        "srcPath" : ""
+    }
+}

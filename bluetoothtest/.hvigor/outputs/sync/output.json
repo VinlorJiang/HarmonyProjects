@@ -1,0 +1,51 @@
+{
+  "ohos-module-entry": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/src/main",
+        "RESOURCES_PATH": [
+          "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/src/main/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/outputs/default",
+          "INTERMEDIA_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/loader_out/default",
+          "RES_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/res/default",
+          "RES_PROFILE_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/res/default/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/cache/default/default@LegacyCompileArkTS/jsbundle",
+          "JS_SUPER_VISUAL_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/cache/default/default@LegacyCompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/loader/default/loader.json",
+          "MANIFEST_JSON": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/manifest/default"
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/src/ohosTest",
+        "RESOURCES_PATH": [
+          "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/src/ohosTest/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/outputs/ohosTest",
+          "INTERMEDIA_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/loader_out/ohosTest",
+          "RES_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/res/ohosTest",
+          "RES_PROFILE_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/res/ohosTest/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/cache/ohosTest/ohosTest@LegacyCompileArkTS/jsbundle",
+          "JS_SUPER_VISUAL_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/cache/ohosTest/ohosTest@LegacyCompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/loader/ohosTest/loader.json",
+          "MANIFEST_JSON": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/manifest/ohosTest"
+        }
+      }
+    }
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/build",
+    "BUNDLE_NAME": "ohos.samples.bttest",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/build/outputs/default"
+    }
+  },
+  "version": 1
+}

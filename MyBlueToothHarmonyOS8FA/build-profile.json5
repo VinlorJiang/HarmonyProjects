@@ -5,13 +5,13 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
-          "certpath": "/Users/admin/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.cer",
-          "storePassword": "0000001A62953F5D27635156D574EB62656818C52D643CBBBE3F6E83ACC50FF837F107032BF4523DD873",
+          "certpath": "/Users/apple/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.cer",
+          "storePassword": "0000001B5E705151ECE15C106E8FC0325F119A56ACB3005210BA20B98074D2E98C8F035B4CC318DA4B9E14",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001ADC591231F9F714F072099D50323244F84748A66E7348E262CE0FD7A2B244426FCC2C457FC5BF",
-          "profile": "/Users/admin/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.p7b",
+          "keyPassword": "0000001B807F86F16E7F3A9E9EF5884C0374F1C79CF1AC115F279C6D24DC9608ACC21B7AB5E5C67652770D",
+          "profile": "/Users/apple/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.p7b",
           "signAlg": "SHA256withECDSA",
-          "storeFile": "/Users/admin/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.p12"
+          "storeFile": "/Users/apple/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.p12"
         }
       }
     ],

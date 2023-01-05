@@ -1,0 +1,1 @@
+/Users/apple/Documents/learning/Harmony/communication_bluetooth-master/test/example/bluetoothtest/entry/build/default/intermediates/res/default/ResourceTable.txt

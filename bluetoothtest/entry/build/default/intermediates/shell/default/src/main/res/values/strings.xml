@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="MainAbility2_desc">"description"</string>
+  <string name="MainAbility2_label">"label"</string>
+  <string name="MainAbility_desc">"description"</string>
+  <string name="MainAbility_label">"蓝牙专项测试"</string>
+</resources>
