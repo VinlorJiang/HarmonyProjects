@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/admin/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.cer",
+          "storePassword": "0000001A62953F5D27635156D574EB62656818C52D643CBBBE3F6E83ACC50FF837F107032BF4523DD873",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001ADC591231F9F714F072099D50323244F84748A66E7348E262CE0FD7A2B244426FCC2C457FC5BF",
+          "profile": "/Users/admin/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/admin/.ohos/config/auto_debug_MyBlueToothHarmonyOS8FA_com.example.mybluetoothharmonyos8fa_70086000227096415.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 8,
+    "compatibleSdkVersion": 8,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
